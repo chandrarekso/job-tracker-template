@@ -1,0 +1,99 @@
+{
+  "_note": "Written by the onboarding Q&A, then safe to hand-edit. Every field here is about YOU; what to search for lives in criteria.json.",
+  "name": "Your Name",
+  "dashboard_title": "Job Tracker",
+  "headline": "One line on what you do \u2014 used only for display.",
+  "current_title": "Strategy Manager",
+  "target_roles": [
+    "Strategy & Operations",
+    "Business Operations",
+    "Chief of Staff",
+    "Transformation",
+    "Growth Strategy"
+  ],
+  "years_experience": 5,
+  "skills": {
+    "_note": "in_stack lifts the technical score; out_of_stack marks a role as a different discipline and pushes it down.",
+    "in_stack": [
+      "sql",
+      "python",
+      "power bi",
+      "powerbi",
+      "excel",
+      "tableau",
+      "looker",
+      "spreadsheet",
+      "dashboards",
+      "microsoft office",
+      "ai tools",
+      "llm",
+      "genai",
+      "generative ai",
+      "chatgpt",
+      "claude",
+      "data-driven",
+      "analytics",
+      "quantitative",
+      "modeling",
+      "modelling"
+    ],
+    "out_of_stack": [
+      "kubernetes",
+      "terraform",
+      "golang",
+      "rust",
+      "c++",
+      "java ",
+      "distributed systems",
+      "pytorch",
+      "tensorflow",
+      "cuda",
+      "production code",
+      "software development",
+      "api design",
+      "microservices",
+      "devops",
+      "ci/cd",
+      "compiler",
+      "kernel",
+      "circuit",
+      "verilog",
+      "rtl",
+      "cad",
+      "solidworks"
+    ]
+  },
+  "cv_variants": [
+    {
+      "id": "MPL-B",
+      "label": "Marketplace CV",
+      "match_keywords": [
+        "marketplace",
+        "gmv",
+        "supply-side",
+        "supply side",
+        "demand-side",
+        "demand side",
+        "two-sided",
+        "take rate",
+        "unit economics",
+        "liquidity",
+        "buyers and sellers",
+        "multi-sided",
+        "seller",
+        "buyer"
+      ],
+      "min_hits": 2
+    },
+    {
+      "id": "CPL-A",
+      "label": "Corporate / product CV",
+      "default": true
+    }
+  ],
+  "custom_cv_below_score": 55,
+  "needs_sponsorship": false,
+  "_feedback_note": "Optional. A form URL that collects feedback for whoever shared this template with you. Leave blank to hide the Send button; the Copy button still works. For a Google Form, use the /viewform URL and set feedback_form_field to the entry.NNNN id of its long-answer question.",
+  "feedback_form_url": "",
+  "feedback_form_field": "entry.1"
+}

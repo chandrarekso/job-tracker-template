@@ -1,0 +1,43 @@
+{
+  "_note": "Companies that do NOT publish through Greenhouse/Lever/Ashby and have a purpose-built scraper in scripts/scrape_custom.py, or need a live browser session. This is a capability registry for those scrapers, not a suggested target list. If a user names one of these, wire up the listed feed type directly instead of running resolve_sources.py.",
+  "feeds": {
+    "Google": {
+      "type": "google_ssr",
+      "note": "dates hide in the AF_initDataCallback 'ds:1' payload, field 12 = created epoch"
+    },
+    "Apple": {
+      "type": "apple_ssr",
+      "note": "jobs.apple.com search HTML, embedded JSON, postDateInGMT"
+    },
+    "Microsoft": {
+      "type": "microsoft_pcsx",
+      "note": "apply.careers.microsoft.com/api/pcsx/search, exact postedTs"
+    },
+    "PayPal": {
+      "type": "paypal_workday",
+      "note": "Workday CXS endpoint, relative postedOn"
+    },
+    "Netflix": {
+      "type": "netflix_eightfold"
+    },
+    "Atlassian": {
+      "type": "atlassian_icims"
+    },
+    "Plaid": {
+      "type": "plaid_html",
+      "note": "own careers pages with schema.org JSON-LD dates"
+    },
+    "Meta": {
+      "type": "browser_only",
+      "note": "bot-blocked to plain HTTP; no posted date published"
+    },
+    "Uber": {
+      "type": "browser_only",
+      "note": "Cloudflare-blocked detail pages; JSON-LD dates once open"
+    }
+  },
+  "generic_types": {
+    "comeet_html": "Comeet-hosted boards embedded in a company's own careers page. Set source_feed.url to that page.",
+    "static_page": "Roles listed on a plain page with email applications. Not scrapable; the dashboard footer flags these as manual-check."
+  }
+}

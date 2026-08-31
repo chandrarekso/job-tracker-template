@@ -1,0 +1,362 @@
+{
+  "_note": "What to search for and how to score it. Written by the onboarding Q&A, then safe to hand-edit. Shipped values are tuned for strategy / business-operations roles \u2014 onboarding replaces them with yours.",
+  "recency_days": 7,
+  "search_queries": [
+    "strategy",
+    "chief of staff",
+    "growth",
+    "business operations"
+  ],
+  "role": {
+    "_note": "include: the title must contain at least one. exclude: any match anywhere kills it. The *_head* rules test only the part of the title before the first comma or dash, because that is what names the actual function \u2014 'Finance & BizOps, Strategic Partnerships' is a bizops role, 'Strategic Partner Manager, Creators' is not.",
+    "include": [
+      "strategy",
+      "strategic",
+      "strategy & operations",
+      "strategy and operations",
+      "transformation",
+      "chief of staff",
+      "consultant",
+      "consulting",
+      "growth",
+      "biz ops",
+      "business operations",
+      "bizops"
+    ],
+    "exclude": [
+      "engineer",
+      "engineering",
+      "developer",
+      "software",
+      "sde",
+      " swe",
+      "data scientist",
+      "scientist",
+      "machine learning",
+      "infrastructure",
+      "backend",
+      "front end",
+      "frontend",
+      "full stack",
+      "devops",
+      "qa ",
+      "designer",
+      "architect",
+      " ml ",
+      "applied scientist",
+      "research scientist",
+      "firmware",
+      "hardware",
+      "technician",
+      "recruiter",
+      "accountant",
+      "counsel",
+      "attorney",
+      "paralegal",
+      "nurse",
+      "physician",
+      "therapist",
+      "specialist: seasonal",
+      "part-time",
+      "retail",
+      "genius",
+      "creative",
+      "account executive",
+      "account manager",
+      "account director",
+      "customer success",
+      "partner development",
+      "partnerships development",
+      "business development representative",
+      "sales development",
+      "technical account",
+      "solutions consultant",
+      "solution consultant",
+      "sales strategy",
+      "sales manager",
+      "sales lead",
+      "sales director",
+      "sales plan",
+      "client partner",
+      "client solutions",
+      "sourcing",
+      "procurement",
+      "supplier strategy",
+      "supply chain",
+      "tax operations",
+      " tax",
+      "technical program manager",
+      "sales representative",
+      "field sales",
+      "sales rep",
+      "account representative",
+      "business development manager"
+    ],
+    "rejected_function_heads": [
+      "strategic finance",
+      "finance & strategy",
+      "finance and strategy",
+      "financial planning",
+      "fp&a",
+      "program manager",
+      "strategic program manager",
+      "senior program manager",
+      "partnership",
+      "strategic partner",
+      "partner manager",
+      "partner enablement",
+      "partner development",
+      "marketing strategy",
+      "enterprise deployment",
+      "brand",
+      "social strategy",
+      "content strategy",
+      "communications",
+      "product marketing",
+      "abm ",
+      "market activation",
+      "information security",
+      "workforce management",
+      "capacity strategy",
+      "capacity planning",
+      "pricing operations",
+      "commercialization",
+      "security consulting",
+      "technical consulting",
+      "delivery consulting"
+    ],
+    "full_title_excludes": [
+      "strategic finance",
+      "finance & strategy",
+      "finance and strategy",
+      "fp&a",
+      "security consulting",
+      "sales representative"
+    ],
+    "rejected_head_prefixes": [
+      "product manager",
+      "staff product manager",
+      "senior product manager",
+      "product design",
+      "principal product manager"
+    ]
+  },
+  "seniority": {
+    "tenure_min": 3,
+    "tenure_max": 8,
+    "tenure_ideal_min": 4,
+    "tenure_ideal_max": 6,
+    "too_senior": [
+      "vp ",
+      "vice president",
+      "svp",
+      "evp",
+      "director",
+      "head of",
+      "chief executive",
+      "chief operating",
+      "chief revenue",
+      "chief product",
+      "chief technology",
+      "chief marketing",
+      "chief financial",
+      "president",
+      "principal ",
+      "partner,",
+      "fellow"
+    ],
+    "too_junior": [
+      "intern",
+      "internship",
+      "new grad",
+      "entry level",
+      "entry-level",
+      "graduate program",
+      "university grad",
+      "apprentice",
+      "trainee",
+      "coordinator",
+      "assistant"
+    ],
+    "too_senior_title": [
+      "executive business",
+      "head of",
+      "global head",
+      "principal",
+      "director",
+      "vice president",
+      " vp",
+      "chief executive"
+    ],
+    "too_junior_title": [
+      "specialist",
+      "coordinator",
+      "assistant",
+      "analyst i",
+      "analyst ii"
+    ],
+    "_trailing_note": "A title whose head ENDS in one of these reads a level too senior. Easy to reverse by emptying the list.",
+    "too_senior_trailing": [
+      "lead"
+    ],
+    "always_allow": [
+      "chief of staff"
+    ],
+    "allow_bare_associate": false
+  },
+  "location": {
+    "country": "US",
+    "mode": "country_wide",
+    "cities": [],
+    "include_remote": true,
+    "query_name": "United States"
+  },
+  "work_mode": {
+    "accept": [
+      "onsite",
+      "hybrid",
+      "remote"
+    ],
+    "_penalty_note": "A fully-remote listing draws far more applicants, so identical fit converts worse. Roles naming a city are not penalised. Set to 0 to disable.",
+    "remote_penalty": 6
+  },
+  "gates": {
+    "tenure": true,
+    "sponsorship": false
+  },
+  "scoring": {
+    "weights": {
+      "role": 35,
+      "industry": 25,
+      "technical": 20,
+      "tenure": 20
+    },
+    "role_floor": 15,
+    "_sector_note": "0-100 desirability per sector, from the catalog's objective sector tags.",
+    "sector_points": {
+      "marketplace": 100,
+      "ecommerce": 100,
+      "fintech": 80,
+      "healthtech": 80,
+      "consumer_tech": 76,
+      "ai_consumer": 76,
+      "ai_platform": 56,
+      "design_creative": 56,
+      "enterprise_saas": 32,
+      "infra_devtools": 20,
+      "deeptech": 20,
+      "other": 48
+    },
+    "_company_points_note": "Optional overrides for individual companies you rate differently from their sector. Wins over sector_points.",
+    "company_points": {},
+    "_signals_note": "Words in a job description that pull an off-sector employer up \u2014 a mandate in your target space is relevant work wherever it sits.",
+    "sector_signals": [
+      "e-commerce",
+      "ecommerce",
+      "marketplace",
+      "gmv",
+      "merchant",
+      "seller",
+      "buyer",
+      "consumer",
+      "retail",
+      "shopper",
+      "checkout",
+      "basket",
+      "two-sided",
+      "supply and demand",
+      "take rate",
+      "logistics",
+      "delivery"
+    ],
+    "role_bonus_signals": [
+      "m&a",
+      "merger",
+      "acquisition",
+      "corporate development",
+      "partnership",
+      "new market",
+      "market entry",
+      "expansion",
+      "new vertical",
+      "0-to-1",
+      "zero to one",
+      "launch",
+      "joint venture"
+    ],
+    "_patterns_note": "Points are on a 0-35 reference scale, converted to a fraction and then multiplied by your role weight. Ordered high to low; the best match wins.",
+    "role_patterns": [
+      {
+        "points": 35,
+        "patterns": [
+          "strategy (and|&) operations",
+          "strategic (initiatives|projects|programs)",
+          "\\bbiz ?ops\\b",
+          "business operations",
+          "chief of staff",
+          "\\bstrategy\\b.*\\bmanager\\b",
+          "\\bstrategy (lead|manager|associate)\\b"
+        ]
+      },
+      {
+        "points": 30,
+        "patterns": [
+          "transformation",
+          "special projects",
+          "new market",
+          "market entry",
+          "expansion",
+          "\\bm&a\\b",
+          "corporate development",
+          "partnerships? (lead|manager|strategy)",
+          "go-?to-?market",
+          "\\bgtm\\b",
+          "launch",
+          "0-?to-?1",
+          "new vertical"
+        ]
+      },
+      {
+        "points": 28,
+        "patterns": [
+          "general manager",
+          "business manager",
+          "commercial (operations|strategy)",
+          "operations (manager|lead)",
+          "program manager"
+        ]
+      },
+      {
+        "points": 20,
+        "patterns": [
+          "(marketing|finance|product|pricing|revenue)\\s*(&|and)?\\s*strategy",
+          "strategy,?\\s*(marketing|finance|product|pricing|revenue)",
+          "\\bgrowth\\b",
+          "lifecycle",
+          "strategic (partner|partnerships)",
+          "strategic finance"
+        ]
+      },
+      {
+        "points": 10,
+        "patterns": [
+          "(communications|content|brand|social) strategy",
+          "creative strategy"
+        ]
+      }
+    ]
+  },
+  "high_effort_signals": [
+    "cover letter",
+    "writing sample",
+    "essay",
+    "why do you want to work",
+    "tell us why",
+    "personal statement",
+    "written response",
+    "short answer",
+    "please describe why"
+  ],
+  "_priorities_note": "P1 = dream companies, checked first and highlighted. P2 = strong interest. P3 = worth knowing about. Written by onboarding from your prioritised company list.",
+  "company_priorities": {}
+}

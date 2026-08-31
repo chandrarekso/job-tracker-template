@@ -1,0 +1,65 @@
+{
+  "_note": "Sector taxonomy used for scoring. Onboarding asks the user to rank these, and the ranking becomes scoring.sector_points in criteria.json (0-100). Every company in data/companies.json carries one of these ids. Add your own if none fit.",
+  "sectors": [
+    {
+      "id": "marketplace",
+      "label": "Marketplaces",
+      "description": "Two-sided platforms matching supply and demand"
+    },
+    {
+      "id": "ecommerce",
+      "label": "E-commerce & retail",
+      "description": "Direct-to-consumer and online retail"
+    },
+    {
+      "id": "fintech",
+      "label": "Fintech & payments",
+      "description": "Banking, payments, investing, crypto"
+    },
+    {
+      "id": "healthtech",
+      "label": "Health tech",
+      "description": "Care delivery, clinical software, health insurance"
+    },
+    {
+      "id": "consumer_tech",
+      "label": "Consumer tech & media",
+      "description": "Large consumer apps, social, streaming, devices"
+    },
+    {
+      "id": "ai_consumer",
+      "label": "Consumer AI",
+      "description": "AI products with an end-user surface"
+    },
+    {
+      "id": "ai_platform",
+      "label": "AI platforms & labs",
+      "description": "Foundation models and the platforms built on them"
+    },
+    {
+      "id": "design_creative",
+      "label": "Design & creative tools",
+      "description": "Software for designers, marketers, creators"
+    },
+    {
+      "id": "enterprise_saas",
+      "label": "Enterprise SaaS",
+      "description": "B2B software sold to companies"
+    },
+    {
+      "id": "infra_devtools",
+      "label": "Infrastructure & devtools",
+      "description": "Compute, databases, developer tooling"
+    },
+    {
+      "id": "deeptech",
+      "label": "Deep tech",
+      "description": "Hardware, robotics, energy, science R&D"
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "description": "Anything not covered above"
+    }
+  ]
+}

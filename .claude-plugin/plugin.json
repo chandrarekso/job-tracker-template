@@ -1,0 +1,6 @@
+{
+  "name": "job-tracker",
+  "description": "Personal job-search tracker: scrapes company job boards, scores roles against your background, and publishes a dashboard you can triage from.",
+  "version": "1.0.0",
+  "keywords": ["jobs", "job-search", "career", "tracker", "dashboard"]
+}

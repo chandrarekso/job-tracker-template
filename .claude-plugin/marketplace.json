@@ -1,0 +1,13 @@
+{
+  "name": "job-tracker-marketplace",
+  "owner": {
+    "name": "Job Tracker"
+  },
+  "plugins": [
+    {
+      "name": "job-tracker",
+      "source": "./",
+      "description": "Personal job-search tracker: scrapes company job boards, scores roles against your background, and publishes a dashboard you can triage from."
+    }
+  ]
+}

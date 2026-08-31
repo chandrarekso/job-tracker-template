@@ -36,6 +36,26 @@ Four steps. Run them in order, one message at a time — do not dump all the
 questions at once. After each step, show what you captured and let them correct
 it before moving on.
 
+### First, read what they already gave you
+
+The README offers a fill-in template, so their opening message may already
+answer half of this — and it will have blanks and placeholder examples in it.
+Before asking anything:
+
+- **Take what's there.** Treat any filled line as their answer. Never re-ask
+  something they've already told you; it reads as not having listened.
+- **Ignore the scaffolding.** Lines they left blank, deleted, or left as the
+  `e.g.` example text are not answers. A line reading `e.g. Stripe, Ramp, Figma`
+  is the template's own example, not their company list.
+- **Say what you got before asking for the rest.** One short list of what you
+  captured, then only the questions that are genuinely still open.
+- **Still confirm the CV-derived parts.** Even a fully-filled template doesn't
+  cover what the CV says about their tools and functions, and people
+  under-describe themselves. Propose those and let them correct.
+
+If they said "suggest some for me" for companies, that's a real answer — do the
+suggesting rather than pushing the question back at them.
+
 Scaffold first: copy the plugin's `template/` directory to `~/job-tracker/` if it
 isn't there yet, and copy `config/profile.example.json` and
 `config/criteria.example.json` to `profile.json` and `criteria.json`. Those

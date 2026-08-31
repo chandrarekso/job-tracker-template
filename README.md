@@ -33,21 +33,54 @@ Then:
 /plugin install job-tracker
 ```
 
-## Start
+## Your first message
 
-Say this in the chat:
+**Attach your CV and say:**
 
 > set up my job tracker
 
-It'll ask for your CV, read it, and suggest the roles, industries and seniority
-that fit your background. Change anything you disagree with — the suggestions
-are a starting point, not a verdict. Then it asks which companies you're
-targeting, where you want to work, and whether you need visa sponsorship.
+That's genuinely enough. Claude reads the CV, proposes the roles, industries and
+seniority that fit your background, and asks you to correct anything it got
+wrong. You'll answer a handful of questions and be done in about ten minutes.
 
-When that's done it explains how the scoring works, runs the first scan, and
-gives you a link to your dashboard.
+### Or front-load it
 
-The whole thing takes about ten minutes.
+If you already know what you want, paste this instead and fill in whatever you
+can. **Delete any line you're unsure about** — Claude asks about the gaps and
+won't re-ask anything you've already answered.
+
+```text
+Set up my job tracker. My CV is attached.
+
+WHAT I'M LOOKING FOR
+- Job titles:            e.g. Analytics Manager, Business Intelligence Lead
+- Industries:            e.g. fintech and health tech; not enterprise software
+- Seniority:             e.g. 4-7 years; not director level
+- Deal-breakers:         e.g. no pure sales roles, no people-management
+
+WHERE
+- Location:              e.g. New York and Boston only  /  anywhere in the US
+- Onsite, hybrid, remote: e.g. hybrid or onsite, not fully remote
+
+COMPANIES
+- Dream companies (P1):  e.g. Stripe, Ramp, Figma
+- Interested (P2):       e.g. Notion, Databricks
+- Or: suggest some for me
+
+PRACTICAL
+- Visa sponsorship:      e.g. yes, I need it  /  no
+- Only show roles posted in the last: 7 days
+```
+
+Everything here is changeable later, so don't overthink it. Once you're set up
+you can just say things like `only New York`, `add Figma as a P1`, or
+`redo my job tracker setup`.
+
+### What happens next
+
+Claude explains how scoring works, runs the first scan, and gives you a link to
+your dashboard. A thin first scan is normal — most companies post nothing in a
+given week.
 
 ---
 

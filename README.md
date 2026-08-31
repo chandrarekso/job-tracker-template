@@ -12,70 +12,56 @@ configure by hand.
 
 ---
 
-## What you need
+## Setup — 4 steps
 
-- **[Claude Code](https://claude.com/claude-code)** — desktop app or terminal,
-  either works.
-- **Python 3** — already installed on macOS. On Windows, get it from
-  [python.org](https://python.org) and tick "Add Python to PATH" during setup.
+### 1. Get Claude Code
 
-## Install
+Download it from **[claude.com/claude-code](https://claude.com/claude-code)**.
+The Mac or Windows app is fine; you don't need a terminal.
 
-**Just ask Claude.** Paste this as a normal message — no slash command:
+### 2. Install the tracker
+
+Open Claude Code and paste this as a normal message:
 
 ```text
 Install the job tracker skill from
 https://github.com/chandrarekso/job-tracker-template
 
-Clone it, copy skills/job-tracker (including its template folder) into
-~/.claude/skills/, and confirm what landed there.
+Clone it and copy skills/job-tracker, including its template folder,
+into ~/.claude/skills/
 ```
 
-That's it. It works in the desktop app and the terminal alike.
+### 3. Restart Claude Code
+
+Quit it and open it again. It only looks for new skills at startup, so it won't
+find the tracker until you do this.
+
+### 4. Attach your CV and say:
+
+```text
+set up my job tracker
+```
+
+Claude reads your CV, suggests the roles, industries and seniority that fit,
+and asks you to correct anything it got wrong. About ten minutes of questions,
+then it runs the first scan and hands you your dashboard.
+
+---
+
+## Two things worth knowing
+
+**Nothing here is permanent.** Once you're set up you can say things like
+`only New York`, `add Figma as a P1`, or `redo my job tracker setup`.
+
+**A thin first scan is normal.** It only looks at the last 7 days, and most
+companies post nothing in a given week.
 
 <details>
-<summary>Prefer the plugin manager? (terminal only)</summary>
+<summary>Front-load your answers instead (optional)</summary>
 
-`/plugin` is a **terminal-only** command — it does nothing in the desktop or web
-app, which is why the plain-English install above is the default. If you're in a
-terminal running `claude`, this works too:
-
-```bash
-/plugin marketplace add chandrarekso/job-tracker-template
-```
-
-```bash
-/plugin install job-tracker
-```
-
-</details>
-
-<details>
-<summary>Or install it by hand</summary>
-
-```bash
-git clone --depth 1 https://github.com/chandrarekso/job-tracker-template /tmp/jt && mkdir -p ~/.claude/skills && cp -R /tmp/jt/skills/job-tracker ~/.claude/skills/ && rm -rf /tmp/jt
-```
-
-</details>
-
-Restart Claude Code after installing so it picks up the new skill.
-
-## Your first message
-
-**Attach your CV and say:**
-
-> set up my job tracker
-
-That's genuinely enough. Claude reads the CV, proposes the roles, industries and
-seniority that fit your background, and asks you to correct anything it got
-wrong. You'll answer a handful of questions and be done in about ten minutes.
-
-### Or front-load it
-
-If you already know what you want, paste this instead and fill in whatever you
-can. **Delete any line you're unsure about** — Claude asks about the gaps and
-won't re-ask anything you've already answered.
+If you already know what you want, paste this at step 4 rather than the short
+version. **Delete any line you're unsure about** — Claude asks about the gaps
+and won't re-ask anything you've answered.
 
 ```text
 Set up my job tracker. My CV is attached.
@@ -100,15 +86,38 @@ PRACTICAL
 - Only show roles posted in the last: 7 days
 ```
 
-Everything here is changeable later, so don't overthink it. Once you're set up
-you can just say things like `only New York`, `add Figma as a P1`, or
-`redo my job tracker setup`.
+</details>
 
-### What happens next
+<details>
+<summary>Other ways to install</summary>
 
-Claude explains how scoring works, runs the first scan, and gives you a link to
-your dashboard. A thin first scan is normal — most companies post nothing in a
-given week.
+**In a terminal running `claude`,** the plugin manager works. Note that
+`/plugin` does nothing in the desktop or web app, which is why it isn't the
+default:
+
+```bash
+/plugin marketplace add chandrarekso/job-tracker-template
+```
+
+```bash
+/plugin install job-tracker
+```
+
+**By hand,** one command:
+
+```bash
+git clone --depth 1 https://github.com/chandrarekso/job-tracker-template /tmp/jt && mkdir -p ~/.claude/skills && cp -R /tmp/jt/skills/job-tracker ~/.claude/skills/ && rm -rf /tmp/jt
+```
+
+</details>
+
+<details>
+<summary>You'll also need Python 3</summary>
+
+Already on every Mac. On Windows, install it from
+[python.org](https://python.org) and tick **Add Python to PATH** during setup.
+
+</details>
 
 ---
 

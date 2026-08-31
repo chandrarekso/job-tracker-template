@@ -14,24 +14,52 @@ configure by hand.
 
 ## What you need
 
-- **[Claude Code](https://claude.com/claude-code)** — the desktop app for Mac or
-  Windows is the easiest way in. You won't need a terminal.
+- **[Claude Code](https://claude.com/claude-code)** — desktop app or terminal,
+  either works.
 - **Python 3** — already installed on macOS. On Windows, get it from
   [python.org](https://python.org) and tick "Add Python to PATH" during setup.
 
 ## Install
 
-In Claude Code, run:
+**Just ask Claude.** Paste this as a normal message — no slash command:
+
+```text
+Install the job tracker skill from
+https://github.com/chandrarekso/job-tracker-template
+
+Clone it, copy skills/job-tracker (including its template folder) into
+~/.claude/skills/, and confirm what landed there.
+```
+
+That's it. It works in the desktop app and the terminal alike.
+
+<details>
+<summary>Prefer the plugin manager? (terminal only)</summary>
+
+`/plugin` is a **terminal-only** command — it does nothing in the desktop or web
+app, which is why the plain-English install above is the default. If you're in a
+terminal running `claude`, this works too:
 
 ```bash
 /plugin marketplace add chandrarekso/job-tracker-template
 ```
 
-Then:
-
 ```bash
 /plugin install job-tracker
 ```
+
+</details>
+
+<details>
+<summary>Or install it by hand</summary>
+
+```bash
+git clone --depth 1 https://github.com/chandrarekso/job-tracker-template /tmp/jt && mkdir -p ~/.claude/skills && cp -R /tmp/jt/skills/job-tracker ~/.claude/skills/ && rm -rf /tmp/jt
+```
+
+</details>
+
+Restart Claude Code after installing so it picks up the new skill.
 
 ## Your first message
 

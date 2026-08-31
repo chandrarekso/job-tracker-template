@@ -61,11 +61,23 @@ Before asking anything:
 If they said "suggest some for me" for companies, that's a real answer — do the
 suggesting rather than pushing the question back at them.
 
-Scaffold first: copy the plugin's `template/` directory to `~/job-tracker/` if it
-isn't there yet, and copy `config/profile.example.json` and
-`config/criteria.example.json` to `profile.json` and `criteria.json`. Those
-examples are tuned for strategy / business-operations roles; treat them as a
-starting shape to overwrite, not as defaults to keep.
+Scaffold first. The starting files live in a `template/` directory **next to
+this SKILL.md**. Copy it to `~/job-tracker/` if that doesn't exist yet, then
+copy `config/profile.example.json` and `config/criteria.example.json` to
+`profile.json` and `criteria.json`. Those examples are tuned for strategy /
+business-operations roles; treat them as a starting shape to overwrite, not as
+defaults to keep.
+
+If `template/` is missing next to this file — some install routes copy only the
+skill — fetch it instead, then carry on:
+
+```bash
+git clone --depth 1 https://github.com/chandrarekso/job-tracker-template /tmp/jt \
+  && cp -R /tmp/jt/skills/job-tracker/template ~/job-tracker && rm -rf /tmp/jt
+```
+
+Everything after this point runs from `~/job-tracker/`, never from the skill
+directory — the skill is shared across projects, the user's tracker is theirs.
 
 ### Step 1 — Background and search parameters
 

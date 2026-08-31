@@ -93,7 +93,6 @@
   ],
   "custom_cv_below_score": 55,
   "needs_sponsorship": false,
-  "_feedback_note": "Optional. A form URL that collects feedback for whoever shared this template with you. Leave blank to hide the Send button; the Copy button still works. For a Google Form, use the /viewform URL and set feedback_form_field to the entry.NNNN id of its long-answer question.",
-  "feedback_form_url": "",
-  "feedback_form_field": "entry.1"
+  "_feedback_note": "Set false to hide the Feedback tab's Send button. The destination itself lives in catalog/feedback.json and belongs to whoever published this template. The Copy button works either way.",
+  "feedback_enabled": true
 }

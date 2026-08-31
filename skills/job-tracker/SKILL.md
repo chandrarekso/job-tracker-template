@@ -28,6 +28,11 @@ path, or a JSON blob unless they ask. Talk about "your criteria", not
 Everything lives in `~/job-tracker/`. Scans are **on demand only** — never set up
 a schedule unless the user explicitly asks for one.
 
+`catalog/feedback.json` is the one file you never edit. It carries the feedback
+destination belonging to whoever published this template. If the user would
+rather not send feedback, set `feedback_enabled: false` in their profile — that
+hides the Send button and leaves Copy working.
+
 ---
 
 ## Onboarding

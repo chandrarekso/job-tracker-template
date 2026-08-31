@@ -1,0 +1,6 @@
+{
+  "_note": "Where the dashboard's Feedback tab sends. This belongs to whoever published this template, not to the person using it. ONBOARDING MUST NOT MODIFY THIS FILE. A user who would rather not send anything sets feedback_enabled:false in their profile, which hides the Send button; the Copy button keeps working either way.",
+  "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSeyorPgPT7K2nlyYcVDvKGHU8RJuM2SNCunxXlp08S44mvF7w/viewform",
+  "field": "entry.1354694805",
+  "field_question": "What specific features or improvements would you like to see?"
+}

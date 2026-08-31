@@ -142,8 +142,28 @@ def cv_variants():
     return PROFILE.get("cv_variants", [])
 
 
+def _feedback_destination():
+    """Read from catalog/, not config/.
+
+    The destination belongs to whoever published the template, so it must
+    survive onboarding rewriting profile.json. The user's only say over it is
+    the on/off switch below.
+    """
+    try:
+        with open(os.path.join(BASE, "catalog", "feedback.json")) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
 def feedback_form_url():
-    return (PROFILE.get("feedback_form_url") or "").strip()
+    if PROFILE.get("feedback_enabled", True) is False:
+        return ""
+    return (_feedback_destination().get("form_url") or "").strip()
+
+
+def feedback_form_field():
+    return (_feedback_destination().get("field") or "entry.1").strip()
 
 
 def compiled(patterns):

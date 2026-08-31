@@ -1075,7 +1075,7 @@ html = (TEMPLATE
         .replace("__GEN_DISPLAY__", gen_display)
         .replace("__MANUAL_NOTE__", manual_note)
         .replace("__COMPANY_COUNT__", str(len(company_rows)))
-        .replace("__FEEDBACK_FIELD__", profile.get("feedback_form_field", "entry.1"))
+        .replace("__FEEDBACK_FIELD__", config.feedback_form_field())
         .replace("__APPLIED_SEED__", json.dumps(applied_seed))
         .replace("__PROFILE_JSON__", json.dumps(profile))
         .replace("__CRITERIA_JSON__", json.dumps(criteria))

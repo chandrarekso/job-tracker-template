@@ -284,4 +284,7 @@ def build_job(company, title, loc, url, desc, dt, source_id,
         "application_link": url,
         "applied": False,
         "last_seen": datetime.now(timezone.utc).isoformat(),
+        # Plain-text description, capped, so downstream scorers can read the
+        # stated minimums and parent team without re-fetching the posting.
+        "description": (desc or "")[:8000],
     }

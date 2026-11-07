@@ -18,6 +18,10 @@ The browser pass has to happen **before** the pipeline runs, because
    that link saved. If this session didn't publish it, pass the stored artifact
    URL explicitly, or the publish creates a second artifact with a new link.
 4. **Report what changed** versus the previous scan, not just the totals.
+5. **Sync (optional).** If the user keeps a private git remote for their tracker
+   data, run `zsh scripts/sync_remote.sh` so other tools see the new scan. It
+   pushes only the data and config JSON files. Set it up once with
+   `git init && git remote add origin <private repo url>` in `~/job-tracker`.
 
 ## What "report what changed" means
 
